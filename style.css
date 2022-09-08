@@ -10,6 +10,8 @@ html{
 }
 body{
     font-family: 'Montserrat', sans-serif;;
+
+
     background-color: hsl(30, 38%, 92%);
     min-height: 100vh;
     display: flex;
@@ -28,7 +30,7 @@ body{
     margin: 0 30px;
 }
 #img{
-    width: 50%;
+    max-width: 50%;
 }
 #img img{
     max-width: 100%;
@@ -39,7 +41,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
-    width: 50%;
+    max-width: 50%;
     font-size: 1rem;
     color: hsl(228, 12%, 48%);
 }
@@ -82,6 +84,8 @@ body{
     color: white;
     font-size: 0.9rem;
     font-weight: 700;
+
+    transition: ease 0.2s;
 }
 .btn:hover{
     background-color: hsl(158, 36%, 27%);
@@ -90,19 +94,20 @@ body{
     padding: 0 10px;
 }
 
+
 @media (max-width: 650px) {
     html{
         font-size: 12px;
     }
     .main-container{
         flex-direction: column;
-        max-width: 80%;
-        margin: 30px 15px;
+        max-width: 450px;
+        margin: 0 13px;
     }
     #img , .card-text{
-        width: 100%;
+        max-width: 100%;
     }
     .card-text>*{
-        padding-bottom: 14px;
+        padding-bottom: 10px;
     }
 }
