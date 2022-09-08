@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 14px;
+}
 body{
     font-family: 'Montserrat', sans-serif;;
     background-color: hsl(30, 38%, 92%);
@@ -13,6 +16,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .main-container{
@@ -21,6 +25,7 @@ body{
     display: flex;
     border-radius: 10px;
     overflow: hidden;
+    margin: 0 30px;
 }
 #img{
     width: 50%;
@@ -35,21 +40,20 @@ body{
     justify-content: space-between;
     padding: 30px;
     width: 50%;
-
-    font-size: 14px;
+    font-size: 1rem;
     color: hsl(228, 12%, 48%);
 }
 .card-text>h1{
     font-family: 'Fraunces', serif;
     line-height: 1em;
     color: hsl(212, 21%, 14%);
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 .card-text>h2{
-    font-size: 13px;
+    font-size: 0.9rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 500;
 }
 .card-text>p{
     line-height: 2em;
@@ -61,8 +65,8 @@ body{
 }
 #new-tag{
     color: hsl(158, 36%, 37%);
-    font-size: 30px;
-    padding-right:20px;;
+    font-size: 2rem;
+    padding-right:20px;
 }
 #old-tag{
     font-weight: 700;
@@ -76,7 +80,7 @@ body{
     cursor: pointer;
 
     color: white;
-    font-size: 13px;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 .btn:hover{
@@ -84,4 +88,21 @@ body{
 }
 .btn>img{
     padding: 0 10px;
+}
+
+@media (max-width: 650px) {
+    html{
+        font-size: 12px;
+    }
+    .main-container{
+        flex-direction: column;
+        max-width: 80%;
+        margin: 30px 15px;
+    }
+    #img , .card-text{
+        width: 100%;
+    }
+    .card-text>*{
+        padding-bottom: 14px;
+    }
 }
